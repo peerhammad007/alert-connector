@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "node src/client/serve-mock.js",
     "test": "node --test"
   },
   "keywords": [],

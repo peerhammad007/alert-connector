@@ -132,8 +132,8 @@ export function createSourceMock(opts = {}) {
     inject,
     credentials: { clientId, clientSecret },
     /** @returns {Promise<string>} base URL */
-    start() {
-      return new Promise((resolve) => server.listen(0, '127.0.0.1', () => {
+    start(port = 0) {
+        return new Promise((resolve) => server.listen(port, '127.0.0.1', () => {
         const addr = /** @type {import('node:net').AddressInfo} */ (server.address());
         resolve(`http://127.0.0.1:${addr.port}`);
       }));
