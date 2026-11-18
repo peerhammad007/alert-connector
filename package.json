@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node src/client/serve-mock.js",
+    "dev": "nodemon src/client/serve-mock.js",
     "test": "node --test"
   },
   "keywords": [],
@@ -12,6 +12,8 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "express": "^5.3.0",
+    "nodemon": "^3.1.14",
     "zod": "^4.6.7"
   }
 }
